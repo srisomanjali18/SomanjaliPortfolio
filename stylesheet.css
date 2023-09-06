@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: #f9f4ef; */
+    background-color: #fffffe;
+    color: rgb(111, 111, 111);
+    line-height: 1.5;
+}
+
+.top-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem 3rem 4rem;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+   }
+   .logo {
+    height: 100px;
+    width: 200px;
+
+   }
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--gap, 3rem);
+    /* border: 1px solid red; */
+    flex-direction: row;
+    font-size: 1.1rem;
+    align-items: center;
+    letter-spacing: 0.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu a,
+li {
+    color: rgb(111, 111, 111);
+    /* border: 1px solid red; */
+    list-style: none;
+}
+
+.box-btn {
+    border: 2px solid rgb(111, 111, 111);
+    border-radius: 5px;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* transition: box-shadow 200ms ease, transform 200ms; */
+}
+
+.box-btn:hover {
+    transform: scale(1.1);
+}
+
+a.active {
+    border-bottom: 2px solid #ebab72;
+    padding-left: 15px;
+    padding-right: 11px;
+    padding-bottom: 0.32rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* .intro {
+    width: 100%;
+    left: 4rem;
+    right: 4rem;
+    padding: 4rem 4rem 1rem 4rem;
+} */
+
+.intro{
+    width: 100%;
+    left: 4rem;
+    right: 4rem;
+    padding: 4rem 4rem 1rem 4rem;
+  }
+  
+  .greetings-heading{
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 2px solid; */
+    width: 0;
+    animation: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+  
+.intro h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Quantico', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+
+}
+
+.name-span {
+    font-family: 'Quantico', sans-serif;
+    /* color:  #FFB16D; */
+    color:
+    #ebab72;
+    font-size: 4.5rem;
+}
+
+.intro p {
+    margin-top: 5rem;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-weight: 300;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+
+}
+
+.intro a {
+    text-decoration: none;
+    color: #ebab72;
+
+    font-weight: 300;
+}
+
+.intro a:hover {
+    color: rgb(120, 164, 234);
+}
+
+.downbtn-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding:2rem 2rem 2.1rem 2rem;
+
+}
+
+.btn {
+    border-radius: 50px 50px 50px 50px;
+    border: 0.1px solid rgb(156, 150, 150);
+    padding: 0.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ebab72;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    box-shadow: 0 0 10px 0 rgba(113, 110, 110, 0.5);
+    transition: box-shadow 200ms ease, transform 200ms
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    border: 0px;
+    box-shadow: rgb(211, 211, 211) 0px 0px 20px 1px;
+    cursor: pointer;
+}
+
+.projects-container {
+    width: 100%;
+    padding: 2rem 6rem;
+}
+
+.hover-cont {
+    display: flex;
+    border-radius: 9px;
+    transition: box-shadow 300ms ease, transform 300ms
+}
+
+.hover-cont:hover {
+    transform: scale(1.005);
+    box-shadow: 0px 0px 30px 10px rgb(210, 205, 205);
+}
+
+.description-card {
+    border: 10px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    background-color: #DBE7F1;
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+.description {
+    padding: 30px;
+    list-style: none;
+}
+
+.description h3 {
+    /* font-family: 'Quantico', sans-serif; */
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+    color: rgb(71, 70, 70);
+    margin-top: 60%;
+    overflow-wrap: break-word;
+}
+
+.description p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.25rem;
+    font-weight: 300;
+    color: rgb(71, 70, 70);
+    margin-top: 2rem;
+    overflow-wrap: break-word;
+}
+
+.description a {
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+    font-weight: 500;
+    width: 50%;
+}
+
+.description a:hover {
+    color: #ebab72;
+}
+
+.btns {
+    margin-top: 5rem;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    color: rgb(71, 70, 70);
+}
+
+.chkout-btn {
+    border: 1px solid rgb(71, 70, 70);
+    border-radius: 50px 50px 50px 50px;
+    padding: 0.6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.github-btn {
+    border: 1px solid rgb(71, 70, 70);
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    margin-top: 1rem;
+}
+
+.mockup-card {
+    padding: 0px;
+    border: 10px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-color: #E8EFF5;
+    width: 70%;
+    height: auto;
+    float: right;
+}
+
+.mockup-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer-container {
+    padding: 3rem 6rem 2rem 6rem;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-container p {
+    width: 40%;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+}
+
+.social-btn {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.social-btn a {
+    text-decoration: none;
+    color: #fff;
+    /* margin-right: 1rem; */
+}
+
+/* About page */
+.about-container {
+    width: 100%;
+    padding: 1rem 8rem;
+}
+
+.about-container h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+    color: rgb(71, 70, 70);
+    /* margin-top: 2rem; */
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.Aboutme-desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.12rem;
+    font-weight: 300;
+    color: rgb(56, 56, 56);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow-wrap: break-word;
+}
+
+.about-card {
+    /* background-color: #E8EFF5; */
+    background-color: #fffffe;
+    border-radius: 9px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    transition: box-shadow 300ms ease, transform 300ms
+}
+
+.about-card:hover {
+    transform: scale(1.005);
+    /* box-shadow: 0px 0px 30px 10px #E7DFC6; */
+    box-shadow: 0px 0px 30px 10px #d9e0e7;
+}
+
+.education {
+    position: relative;
+    width: 100%;
+    padding: 1rem 8rem;
+    height: 50vh;
+    /* margin: 2rem; */
+    display: flex;
+}
+
+.education h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.education ul {
+    margin-left: 1.2rem;
+}
+
+.education li {
+    list-style: square
+}
+
+.ed {
+    width: 40%;
+    float: left
+}
+
+.sk {
+    width: 60%;
+    float: right;
+}
+
+.sk h2 {
+    text-align: right;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: var(--gap, 1.5rem);
+}
+
+.skillcard {
+    /* background-color: #d7e4f2; */
+    background-color: #E8EFF5;
+    border-radius: 20px;
+    height: 96px;
+    width: 96px;
+    object-position: center;
+    padding: 0.8rem;
+    opacity: 0.85;
+}
+
+.skillcard:hover {
+    opacity: 1;
+}
+
+.skillcard img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.skillcard P {
+    text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .intro h1 {
+        font-size: 3rem;
+        overflow-wrap: break-word;
+    }
+
+    .name-span {
+        font-size: 3.5rem;
+    }
+
+    .intro p {
+        font-size: 1.6rem;
+    }
+
+    .hover-cont {
+        aspect-ratio: 16/9;
+    }
+
+    .description h3 {
+        /* font-size: 1.8rem; */
+        margin-top: 0;
+    }
+
+    .btns {
+        font-size: 0.9rem;
+        width: 250px;
+    }
+
+    .chkout-btn {
+        border: 1px solid rgb(71, 70, 70);
+        width: 100%;
+    }
+
+    .github-btn {
+        border: 1px solid rgb(71, 70, 70);
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .hover-cont {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .description-card {
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    .description {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .description h3 {
+        font-size: 1.3rem;
+        color: rgb(71, 70, 70);
+        margin-top: 0%;
+    }
+
+    .description p {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 0.25rem;
+        font-weight: 400;
+        color: rgb(71, 70, 70);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .description a {
+        text-decoration: none;
+        color: rgb(71, 70, 70);
+        font-weight: 500;
+        width: auto;
+    }
+
+    .btns {
+        margin-top: 0rem;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        color: rgb(71, 70, 70);
+        width: auto;
+    }
+
+    .chkout-btn {
+        margin-top: 0rem;
+        border: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .github-btn {
+        margin-top: 0rem;
+        border: 0px;
+        padding: 0.3rem;
+    }
+
+    .btns i {
+        display: none;
+    }
+
+    .mockup-card {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 9px;
+        border-bottom-left-radius: 9px;
+        width: auto;
+        height: auto;
+    }
+
+    .about-card{
+        margin: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding-left: 0rem;
+        padding-right: 0rem;;
+    }
+    .about-container h1 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .education {
+        padding: 1rem 4rem;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap, 2.5rem);
+    }
+
+    .education li {
+        list-style: none;
+    }
+
+    .education ul {
+        margin-left: 0;
+    }
+
+    .ed {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ed h2 {
+        text-align: center;
+    }
+
+    .sk {
+        width: 100%;
+    }
+
+    .sk h2 {
+        text-align: center;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+
+    .footer-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .footer-container p {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-btn {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        height: 15rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu {
+        font-size: 0.9rem;
+        --gap: 1.5rem;
+    }
+
+    .logo svg {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+        overflow-wrap: break-word;
+    }
+
+    .name-span {
+        font-size: 3rem;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+    }
+
+    .projects-container {
+        width: 100%;
+        padding: 1rem 4rem;
+    }
+
+    
+    .education {
+        position: relative;
+        width: 100%;
+        padding: 1rem 2rem;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap, 2.5rem);
+    }
+
+    .ed{
+        width: 100%;
+    }
+
+    .sk{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top-nav {
+        flex-direction: column;
+        height: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        font-size: 0.7rem;
+        --gap: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .intro {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.4rem;
+    }
+
+    .name-span {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .projects-container {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .about-card {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .education{
+        height: 75vh;
+    }
+
+    .Aboutme-desc {
+        font-size: 1rem;
+    }
+
+    .ed h2 {
+        font-size: 1.9rem;
+    }
+
+    .sk h2 {
+        font-size: 1.9rem;
+    }
+
+    .skillcard {
+        width: 74PX;
+        height: 74PX;
+    }
+}

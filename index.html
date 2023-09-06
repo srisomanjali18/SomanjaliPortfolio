@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Somanjali </title>
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Josefin+Slab&family=Quantico:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" href="https://imagetolink.com/ib/2SX2bPZCFT.png"> 
+    
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="logo">
+            <a href="index.html">
+
+                <div class="logo">
+                    <img src="assets/cover.png" alt="cover">
+                </div>
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul id="menu" class="menu">
+                <li><a class="nav-btn active" href="index.html">PORTFOLIO</a></li>
+                <li><a class="nav-btn" href="about.html">ABOUT</a></li>
+                <div class="box-btn
+                box-btn"><a href="assets/SriResume-1.png">RESUME</a></div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="intro">
+        <h1 class="greetings-heading">Hi there! <br> I’m <span class="name-span">Sri Somanjali</span>,<br>
+            Student,Programmer &   Web Developer.</h1>
+
+        <p>
+            I am a student of Computer Science and Engineering at <a href="https://www.lpu.in/" target="_blank">Lovely
+                Professional University</a>. I am a self-taught
+            programmer and  web developer   <datagrid></datagrid>.
+        </p>
+    </div>
+
+    <div class="downbtn-container">
+        <button class="btn" style="float: right;" onclick="window.location.href='#projects'">&darr;</button>
+    </div>
+
+    <!-- Project 1 -->
+    <div id="projects" class="projects-container">
+        <div class="hover-cont">
+            <div class="description-card clearfix">
+                <div class="description">
+                    <h3>SPORTS CLUB LPU</h3>
+                    <P>
+                        A Website to provide information about sports facilities available in LPU
+                    </P>
+
+                    <div class="btns">
+                        <a href="https://srisomanjali18.github.io/SportsClubLPU/" class="chkout-btn" target="_blank">CHECK
+                            IT OUT!</a>
+                        <a href="https://github.com/srisomanjali18/SportsClubLPU"class="github-btn" target="_blank">
+                            GITHUB<i class="fa fa-github" style="font-size:30px"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mockup-card clearfix">
+                <img src="assets/Project1Image.png" alt="" class="mockup1">
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    
+
+    <footer class="footer-container">
+        <p>
+            I’m available for part-time roles or internships,
+            And I’m always open to speak more about my experiences,
+            portfolio pieces, and new design opportunities.
+            <br>
+            <br>
+            Let’s connect!
+        </p>
+        <div class="social-btn">
+            <a href="https://www.linkedin.com/me?trk=p_mwlite_profile_view-secondary_nav" target="_blank" class="box-btn
+            box-btn">LINKEDIN</a>
+            <a href="https://github.com/srisomanjali18" target="_blank" class="box-btn
+            box-btn">GITHUB</a>
+            <a href="mailto:kakani.12106452@lpu.in" target="_blank" class="box-btn
+            box-btn">EMAIL</a>
+        </div>
+    </footer>
+
+    <!-- Script for navbar highlight -->
+    <script>
+        var btnContainer = document.getElementById("menu");
+
+        var btns = btnContainer.getElementsByClassName("nav-btn");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>

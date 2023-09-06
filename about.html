@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Somanjali</title>
+     <link rel="stylesheet" href="stylesheet.css"> 
+
+    <link rel="icon" href="https://imagetolink.com/ib/2SX2bPZCFT.png" type="image/x-icon"> 
+</head>
+
+<body>
+
+    <div id="cursor" class="follow-cursor"></div>
+    <div id="cursor2" class="follow-cursor2"></div>
+
+    <div class="top-nav">
+        <div class="logo">
+            <a href="index.html">
+                
+<!-- <svg height="130" width="140">
+    <path d="M150 0 L75 200 L225 200 Z" />
+  </svg> -->
+  <div class="logo">
+    <img src="assets/cover.png" alt="cover">
+</div>
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul id="menu" class="menu">
+                <li><a class="nav-btn" href="index.html">PORTFOLIO</a></li>
+                <li><a class="nav-btn active" href="about.html">ABOUT</a></li>
+                <div class="box-btn"><a href="assets/SriResume-1.png">RESUME</a></div>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About me -->
+    <div class="about-container">
+        <div class="about-me">
+            <div class="about-card">
+                <h1>About Me</h1>
+                <p class="Aboutme-desc">
+                    Hello! I'm Sri Somanjali, a computer science student in my third year at Lovely Professional University. Originally from Andhra Pradesh, India, my passion lies in the ever-evolving world of technology.
+                    <br><br>
+
+I'm an enthusiastic learner with a strong grasp of programming languages like C++ and web development tools like HTML and CSS. My foundation in computer science is solid, and I'm eager to keep expanding my knowledge and skills.
+<br><br>
+                    During my free time, I love experimenting with new technologies and enhancing my abilities through online courses and personal projects. I'm also actively seeking opportunities for internships and part-time roles to gain practical experience. I'm always on the lookout for meaningful projects where I can contribute my skills and enthusiasm.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="education">
+        <div class="ed">
+            <h2>EDUCATION</h2>
+            <ul>
+                <li>
+                    <h3>2021-Present</h3>
+                    <h4>B.Tech in Computer Science</h4>
+                    <p> Lovely Professional University, Punjab
+                    <p>
+                </li>
+                <br>
+                <li>
+                    <h3>2019-2021</h3>
+                    <h4>Intermediate</h4>
+                    <p>Bhavana Junior College
+                    <p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sk">
+            <h2>SKILLS</h2>
+            <div class="skills-container">
+                <div class="skillcard">
+                    <img src="assets/skills-logo/c.png" alt="c">
+                    <!-- <p>C</p> -->
+                </div>
+                <div class="skillcard">
+                    <img src="assets/skills-logo/cpp.png" alt="c++">
+                    <!-- <p>CPP</p> -->
+                </div>
+                <div class="skillcard">
+                    <img src="assets/skills-logo/html.png" alt="html">
+                    <!-- <p>html</p> -->
+                </div>
+                <div class="skillcard">
+                    <img src="assets/skills-logo/css.png" alt="css">
+                    <!-- <p>css</p> -->
+                </div>
+                <div class="skillcard">
+                    <img src="assets/skills-logo/sql.png" alt="sql">
+                    <!-- <p>sql</p> -->
+                </div>
+                <div class="skillcard">
+                    <img src="assets/skills-logo/github.png" alt="github">
+                    <!-- <p>github</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-container">
+        <p>
+            I’m available for part-time roles or internships,
+            And I’m always open to speak more about my experiences,
+            portfolio pieces, and new design opportunities.
+            <br>
+            <br>
+            Let’s connect!
+        </p>
+        <div class="social-btn">
+            <a href="https://www.linkedin.com/me?trk=p_mwlite_profile_view-secondary_nav" target="_blank" class="box-btn
+            box-btn">LINKEDIN</a>
+            <a href="https://github.com/srisomanjali18" target="_blank" class="box-btn
+            box-btn">GITHUB</a>
+            <a href="mailto::kakani.12106452@lpu.in" target="_blank" class="box-btn
+            box-btn">EMAIL</a>
+        </div>
+    </footer>
+
+    <!-- Script for cursor -->
+    <script>
+        var cursor = document.getElementById('cursor');
+        var cursor2 = document.getElementById('cursor2');
+        document.onmousemove = function (e) {
+            cursor.style.left = (e.pageX) + "px";
+            cursor.style.top = (e.pageY) + "px";
+            cursor2.style.left = (e.pageX) + "px";
+            cursor2.style.top = (e.pageY) + "px";
+        }
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("shrink-crs");
+
+            setTimeout(() => {
+                cursor.classList.remove("shrink-crs");
+            }, 500);
+        });
+
+        document.addEventListener('click', () => {
+            cursor2.classList.add("shrink-crs2");
+
+            setTimeout(() => {
+                cursor2.classList.remove("shrink-crs2");
+            }, 500);
+        });
+
+        document.addEventListener('hover', () => {
+            cursor.classList.add("expand-crs");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand-crs");
+            }, 500);
+        });
+    </script>
+
+    <!-- Script for navbar highlight -->
+    <script>
+        var btnContainer = document.getElementById("menu");
+
+        var btns = btnContainer.getElementsByClassName("nav-btn");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+    <!-- 3d hover -->
+</body>
+
+</html>
